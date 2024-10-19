@@ -1,4 +1,4 @@
-# Deep-Learning-Based-Attacks-on-Traditional-Watermarking-Systems-in-Real-Time-Live-Video-Streams
+# Real-Time Video Watermark Removal using Optimized SWCNN
 This repository contains the code and resources for our paper titled "Real-Time Video Watermark Removal using Optimized SWCNN". Building upon the Self-supervised Convolutional Neural Network (SWCNN) for image watermark removal, we introduce several optimizations to achieve real-time performance in video watermark removal tasks.
 
 ## Table of Contents
