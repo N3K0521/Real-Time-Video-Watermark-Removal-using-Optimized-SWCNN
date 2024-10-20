@@ -3,19 +3,19 @@ This repository contains the code and resources for our paper titled "Real-Time 
 
 ## Table of Contents
 
-- [Introduction](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-- [Features](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-- [Installation](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-- [Usage](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-    - [Data Preparation](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-    - [Training](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-    - [Watermark Removal](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-    - [Evaluation](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-- [Experiments](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-- [Results](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-- [Acknowledgments](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-- [License](https://www.notion.so/GitHub-12427110ca1f80bfa360deb11d64a8c2?pvs=21)
-
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+    - [Data Preparation](#data-preparation)
+    - [Training](#training)
+    - [Watermark Removal](#watermark-removal)
+    - [Evaluation](#evaluation)
+- [Experiments](#experiments)
+- [Results](#results)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
+  
 ## Introduction
 
 Watermark removal from videos is a challenging task due to the computational demands and the need to maintain high visual quality. In this work, we optimize the SWCNN model to enhance its efficiency and make it suitable for real-time applications. Our optimizations include:
