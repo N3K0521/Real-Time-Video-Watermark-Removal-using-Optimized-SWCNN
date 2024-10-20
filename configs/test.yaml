@@ -1,0 +1,4 @@
+
+
+train_model_out_path: ./data/models
+train_data_path: ./data
