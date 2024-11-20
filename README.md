@@ -120,19 +120,19 @@ Each experiment includes detailed instructions and scripts to facilitate replica
 - **PSNR**: 43.17 dB  
 - **SSIM**: 0.9932  
 - **Video**: <video src="path_to_fp16_video.mp4" controls></video>
-- **Video**: [Unoptimized SWCNN Video](https://raw.githubusercontent.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/main/Visual_comparisons/fp16.mp4)
+- **Video**: [SWCNN with FP16 Computation](https://raw.githubusercontent.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/main/Visual_comparisons/fp16.mp4)
 
 #### **SWCNN with PPFP16**
 - **FPS**: 64.64  
 - **PSNR**: 37.83 dB  
 - **SSIM**: 0.9862  
-- **Video**: [Unoptimized SWCNN Video](https://raw.githubusercontent.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/main/Visual_comparisons/ppfp16.mp4)
+- **Video**: [SWCNN with PPFP16](https://raw.githubusercontent.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/main/Visual_comparisons/ppfp16.mp4)
 
 #### **SWCNN with Multithreading**
 - **FPS**: 66.55  
 - **PSNR**: 34.87 dB  
 - **SSIM**: 0.9862  
-- **Video**: [Unoptimized SWCNN Video](https://raw.githubusercontent.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/main/Visual_comparisons/mm.mp4)
+- **Video**: [SWCNN with Multithreading](https://raw.githubusercontent.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/main/Visual_comparisons/mm.mp4)
 
 ## Results
 
