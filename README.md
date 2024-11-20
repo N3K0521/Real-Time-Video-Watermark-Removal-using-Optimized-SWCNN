@@ -12,6 +12,7 @@ This repository contains the code and resources for our paper titled "Real-Time 
     - [Watermark Removal](#watermark-removal)
     - [Evaluation](#evaluation)
 - [Experiments](#experiments)
+- [Visual Comparisons](#visual-comparisons)
 - [Results](#results)
 - [Acknowledgments](#acknowledgments)
 - [License](#license)
@@ -104,6 +105,32 @@ The `Experiments` folder contains scripts and configurations for reproducing the
 - **Impact of Watermark Size**
 
 Each experiment includes detailed instructions and scripts to facilitate replication of the results.
+
+### Visual Comparison of Watermark Removal Results
+
+#### **Unoptimized SWCNN**
+- **FPS**: 27.76  
+- **PSNR**: 42.75 dB  
+- **SSIM**: 0.9934  
+- **Video**: [![Unoptimized SWCNN](path_to_thumbnail)](path_to_unoptimized_video)
+
+#### **SWCNN with FP16 Computation**
+- **FPS**: 32.53  
+- **PSNR**: 43.17 dB  
+- **SSIM**: 0.9932  
+- **Video**: [![SWCNN with FP16 Computation](path_to_thumbnail)](path_to_fp16_video)
+
+#### **SWCNN with PPFP16**
+- **FPS**: 64.64  
+- **PSNR**: 37.83 dB  
+- **SSIM**: 0.9862  
+- **Video**: [![SWCNN with PPFP16](path_to_thumbnail)](path_to_ppfp16_video)
+
+#### **SWCNN with Multithreading**
+- **FPS**: 66.55  
+- **PSNR**: 34.87 dB  
+- **SSIM**: 0.9862  
+- **Video**: [![SWCNN with Multithreading](path_to_thumbnail)](path_to_multithreading_video)
 
 ## Results
 
