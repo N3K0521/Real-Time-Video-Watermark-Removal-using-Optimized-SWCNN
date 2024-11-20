@@ -112,25 +112,25 @@ Each experiment includes detailed instructions and scripts to facilitate replica
 - **FPS**: 27.76  
 - **PSNR**: 42.75 dB  
 - **SSIM**: 0.9934  
-- **Video**: [![Unoptimized SWCNN](path_to_thumbnail)](path_to_unoptimized_video)
+- **Video**: <video src="path_to_unoptimized_video.mp4" controls></video>
 
 #### **SWCNN with FP16 Computation**
 - **FPS**: 32.53  
 - **PSNR**: 43.17 dB  
 - **SSIM**: 0.9932  
-- **Video**: [![SWCNN with FP16 Computation](path_to_thumbnail)](path_to_fp16_video)
+- **Video**: <video src="path_to_fp16_video.mp4" controls></video>
 
 #### **SWCNN with PPFP16**
 - **FPS**: 64.64  
 - **PSNR**: 37.83 dB  
 - **SSIM**: 0.9862  
-- **Video**: [![SWCNN with PPFP16](path_to_thumbnail)](path_to_ppfp16_video)
+- **Video**: <video src="path_to_ppfp16_video.mp4" controls></video>
 
 #### **SWCNN with Multithreading**
 - **FPS**: 66.55  
 - **PSNR**: 34.87 dB  
 - **SSIM**: 0.9862  
-- **Video**: [![SWCNN with Multithreading](path_to_thumbnail)](path_to_multithreading_video)
+- **Video**: <video src="path_to_multithreading_video.mp4" controls></video>
 
 ## Results
 
