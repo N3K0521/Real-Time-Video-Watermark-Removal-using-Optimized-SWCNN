@@ -112,7 +112,8 @@ Each experiment includes detailed instructions and scripts to facilitate replica
 - **FPS**: 27.76  
 - **PSNR**: 42.75 dB  
 - **SSIM**: 0.9934  
-- ![Unoptimized SWCNN]([https://github.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/blob/main/Visual_comparisons/unoptimised.gif])
+- **Video**: [Unoptimized SWCNN Video](https://raw.githubusercontent.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/main/Visual_comparisons/fp16.mp4)
+
 
 #### **SWCNN with FP16 Computation**
 - **FPS**: 32.53  
