@@ -106,7 +106,7 @@ The `Experiments` folder contains scripts and configurations for reproducing the
 
 Each experiment includes detailed instructions and scripts to facilitate replication of the results.
 
-### Visual Comparison of Watermark Removal Results
+## Visual Comparison of Watermark Removal Results
 
 #### **Unoptimized SWCNN**
 - **FPS**: 27.76  
