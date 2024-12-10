@@ -1,90 +1,61 @@
 # Real-Time Video Watermark Removal using Optimized SWCNN
-This repository contains the code and resources for our paper titled "Real-Time Video Watermark Removal using Optimized SWCNN". Building upon the Self-supervised Convolutional Neural Network (SWCNN) for image watermark removal, we introduce several optimizations to achieve real-time performance in video watermark removal tasks.
 
-## Table of Contents
+This repository contains the code and resources for the paper:  
+**"Deep Learning-Based Attacks on Traditional Watermarking Systems in Real-Time Live Video Streams"**
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-    - [Data Preparation](#data-preparation)
-    - [Training](#training)
-    - [Watermark Removal](#watermark-removal)
-    - [Evaluation](#evaluation)
-- [Experiments](#experiments)
-- [Visual Comparisons](#visual-comparisons)
-- [Results](#results)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
-  
-## Introduction
+Our work builds upon the Self-Supervised Convolutional Neural Network (SWCNN) for image watermark removal. We introduce optimizations—such as half-precision (FP16) inference, preprocessing enhancements, and multithreaded processing—to enable real-time watermark removal in live streaming scenarios. The methods and experiments described in the paper demonstrate the ability to handle both locally served and online (e.g., Twitch) live video streams.
 
-Watermark removal from videos is a challenging task due to the computational demands and the need to maintain high visual quality. In this work, we optimize the SWCNN model to enhance its efficiency and make it suitable for real-time applications. Our optimizations include:
+## Key Features
 
-- **Half-Precision (FP16) Computation**
-- **Preprocessing Enhancements**
-- **Multithreading Optimization**
+- **Real-time Watermark Removal**: Extends SWCNN to video inputs, enabling watermark removal at live streaming frame rates.
+- **FP16 Optimization**: Employs half-precision computations to improve inference speed without compromising watermark removal quality.
+- **Preprocessing and Multithreading**: Integrates preprocessing strategies and multithreaded pipelines to maintain low latency and high FPS.
+- **Local and Online Stream Support**: Demonstrates effectiveness on both local streams (via VLC) and online streams (e.g., Twitch HLS).
 
-These improvements significantly increase processing speed while preserving the quality of watermark removal.
+## Code Overview
 
-## Features
+The repository provides two primary scripts mentioned in the paper:
 
-- Real-time video watermark removal using an optimized SWCNN model.
-- Support for different watermark opacities and sizes.
-- Enhanced computational efficiency through FP16 computation.
-- Multithreaded processing for higher frame rates.
-- Scripts for evaluating PSNR and SSIM metrics.
+1. **`streaming.py`**  
+   - Designed for local streaming scenarios.  
+   - Captures frames from a locally served video stream (e.g., served by VLC at `http://localhost:8080`) using OpenCV’s `VideoCapture`.  
+   - Normalizes, resizes, and converts frames to tensors, then processes them through the SWCNN model with FP16 inference.  
+   - Displays original and watermark-removed frames side-by-side in real time.
+   
+2. **`simulation_real_case.py`**  
+   - Targets online streaming from platforms like Twitch.  
+   - Accepts an HLS (m3u8) URL, extracted from browser developer tools, to capture live segments.  
+   - Handles unstable network conditions, varying bitrates, and changing GOP structures.  
+   - Maintains watermark removal quality, adapting to lower resolutions when necessary and employing FP16 computations for efficiency.  
+   - Demonstrates how the approach can be used in realistic, potentially adversarial scenarios, including overlaying illicit content after watermark removal.
 
-## Installation
-
-### Prerequisites
-
-- Python 3.7 or higher
-- PyTorch 1.7 or higher
-- CUDA Toolkit (for GPU acceleration)
-- FFmpeg (for video processing and metric calculations)
-
-### Dependencies
-
-Install the required Python packages:
-
-```bash
-pip install -r requirements.txt
-
-```
-
-The `requirements.txt` file includes:
-
-- torch
-- torchvision
-- numpy
-- opencv-python
-- tqdm
-- scikit-image
+These scripts reflect the pipeline and experimental setups described in the paper. No additional code beyond what the paper discusses is included here.
 
 ## Usage
 
-### Data Preparation
+### Prerequisites
 
-1. **Extract Video Frames**: Use the provided scripts to extract frames from your input videos.
-2. **Apply Watermarks**: Utilize the watermark generation scripts to apply watermarks of varying opacity and size to the frames.
-
-### Training
-
-Train the optimized SWCNN model using the provided training scripts. Adjust the training parameters as needed.
-
-```bash
-python train.py --config configs/train_config.yaml
-
-```
+- Python 3.9
+- NVIDIA GPU with CUDA support
+- Dependencies listed in the project’s `requirements.txt`
 
 ### Watermark Removal
 
-Use the trained model to remove watermarks from videos.
+Use the trained model to remove watermarks from Local streaming:
 
+Run the local streaming script:
 ```bash
-python remove_watermark.py --input video_with_watermark.mp4 --output video_without_watermark.mp4 --model_path path_to_trained_model.pth
+python streaming.py
+```
 
+Run the Twitch streaming script: 
+```bash
+python twitch.py
+```
+
+Run the real case simulation script: 
+```bash
+python simulation_real_case.py
 ```
 
 ### Evaluation
@@ -107,6 +78,7 @@ The `Experiments` folder contains scripts and configurations for reproducing the
 Each experiment includes detailed instructions and scripts to facilitate replication of the results.
 
 ## Visual Comparison of Watermark Removal Results
+
 
 #### **Unoptimized SWCNN**
 - **FPS**: 27.76  
@@ -134,9 +106,15 @@ Each experiment includes detailed instructions and scripts to facilitate replica
 - **SSIM**: 0.9862  
 - **Video**: [SWCNN with Multithreading](https://raw.githubusercontent.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/main/Visual_comparisons/mm.mp4)
 
+#### **Local streaming demo**
+
+#### **Twitch streaming demo**
+
+#### **Real case simuilation streaming demo**
+
 ## Results
 
-Our optimized model achieves real-time performance with high-quality watermark removal. Detailed results and analyses are provided in the `Results` folder and in the paper.
+Our optimized model achieves real-time performance with high-quality watermark removal. Detailed results and analyses are provided in the paper.
 
 ## Acknowledgments
 
@@ -159,3 +137,4 @@ We extend our gratitude to the authors for their significant contributions to th
 This project is licensed under the MIT License. See the [LICENSE](https://www.notion.so/LICENSE) file for details.
 
 ---
+
