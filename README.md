@@ -3,6 +3,28 @@
 This repository contains the code and resources for the paper:  
 **"Deep Learning-Based Attacks on Traditional Watermarking Systems in Real-Time Live Video Streams"**
 
+- [Introduction](#real-time-video-watermark-removal-using-optimized-swcnn)
+- [Key Features](#key-features)
+- [Code Overview](#code-overview)
+  - [streaming.py](#streamingpy)
+  - [simulation_real_case.py](#simulation_real_casepy)
+- [Usage](#usage)
+  - [Prerequisites](#prerequisites)
+  - [Watermark Removal](#watermark-removal)
+  - [Evaluation](#evaluation)
+- [Experiments](#experiments)
+- [Visual Comparison of Watermark Removal Results](#visual-comparison-of-watermark-removal-results)
+  - [Unoptimized SWCNN](#unoptimized-swcnn)
+  - [SWCNN with FP16 Computation](#swcnn-with-fp16-computation)
+  - [SWCNN with PPFP16](#swcnn-with-ppfp16)
+  - [SWCNN with Multithreading](#swcnn-with-multithreading)
+  - [Local Streaming Demo](#local-streaming-demo)
+  - [Twitch Streaming Demo](#twitch-streaming-demo)
+  - [Real Case Simulation Streaming Demo](#real-case-simulation-streaming-demo)
+- [Results](#results)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
+
 Our work builds upon the Self-Supervised Convolutional Neural Network (SWCNN) for image watermark removal. We introduce optimizations—such as half-precision (FP16) inference, preprocessing enhancements, and multithreaded processing—to enable real-time watermark removal in live streaming scenarios. The methods and experiments described in the paper demonstrate the ability to handle both locally served and online (e.g., Twitch) live video streams.
 
 ## Key Features
