@@ -108,11 +108,11 @@ Each experiment includes detailed instructions and scripts to facilitate replica
 
 #### **Local Streaming Demo**
 
-[Watch Local Streaming Demo]([https://github.com/your-repo-path/local-streaming-demo.mp4](https://github.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/blob/018c5eb3ecede072ba0446e7987c0cf4304dba01/Visual_comparisons/Local%20streaming.mp4))
+[Watch Local Streaming Demo](https://github.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/blob/018c5eb3ecede072ba0446e7987c0cf4304dba01/Visual_comparisons/Local%20streaming.mp4)
 
 #### **Twitch Streaming Demo**
 
-[Watch Twitch Streaming Demo]([https://github.com/your-repo-path/twitch-streaming-demo.mp4](https://github.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/blob/018c5eb3ecede072ba0446e7987c0cf4304dba01/Visual_comparisons/twitch.mp4))
+[Watch Twitch Streaming Demo](https://github.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/blob/018c5eb3ecede072ba0446e7987c0cf4304dba01/Visual_comparisons/twitch.mp4)
 
 #### **Real Case Simulation Streaming Demo**
 
