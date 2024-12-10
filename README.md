@@ -106,11 +106,18 @@ Each experiment includes detailed instructions and scripts to facilitate replica
 - **SSIM**: 0.9862  
 - **Video**: [SWCNN with Multithreading](https://raw.githubusercontent.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/main/Visual_comparisons/mm.mp4)
 
-#### **Local streaming demo**
+#### **Local Streaming Demo**
 
-#### **Twitch streaming demo**
+[Watch Local Streaming Demo](https://github.com/your-repo-path/local-streaming-demo.mp4)
 
-#### **Real case simuilation streaming demo**
+#### **Twitch Streaming Demo**
+
+[Watch Twitch Streaming Demo](https://github.com/your-repo-path/twitch-streaming-demo.mp4)
+
+#### **Real Case Simulation Streaming Demo**
+
+[Watch Real Case Simulation Streaming Demo](https://github.com/your-repo-path/real-case-simulation-demo.mp4)
+
 
 ## Results
 
