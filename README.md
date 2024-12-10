@@ -116,7 +116,7 @@ Each experiment includes detailed instructions and scripts to facilitate replica
 
 #### **Real Case Simulation Streaming Demo**
 
-[Watch Real Case Simulation Streaming Demo](https://github.com/your-repo-path/real-case-simulation-demo.mp4)
+[Watch Real Case Simulation Streaming Demo](https://github.com/N3K0521/Real-Time-Video-Watermark-Removal-using-Optimized-SWCNN/blob/f6c696598913b327b77ed05a34981b0b381b9f71/Visual_comparisons/real%20case%20simulation.mp4)
 
 
 ## Results
