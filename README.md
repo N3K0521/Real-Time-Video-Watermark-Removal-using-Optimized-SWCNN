@@ -63,19 +63,19 @@ These scripts reflect the pipeline and experimental setups described in the pape
 
 ### Watermark Removal
 
-Use the trained model to remove watermarks from Local streaming:
+Use the trained model to remove watermarks from:
 
-Run the local streaming script:
+the local streaming:
 ```bash
 python streaming.py
 ```
 
-Run the Twitch streaming script: 
+the Twitch streaming: 
 ```bash
 python twitch.py
 ```
 
-Run the real case simulation script: 
+the real case simulation: 
 ```bash
 python simulation_real_case.py
 ```
